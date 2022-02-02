@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question11</title>
+</head>
+<body>
+    <input type="text" id="input-password">
+    <input type="button" value="check Button" id="check-btn"> 
+    <div id="out-put">
+        <h1>output will come heare</h1>
+    </div>
+    
+</body>
+<script>
+    const inputPassword=document.querySelector("#input-password")
+    const checkBtn =document.querySelector("#check-btn")
+    const output=document.querySelector("#out-put")
+    
+    function checkPassword(){
+        const input=inputPassword.value.length
+        if(input>10){
+            output.innerText=`user password is succesfull`
+        }else{
+            alert("plese check password length")
+        }
+    }
+    checkBtn.addEventListener("click",checkPassword)
+
+</script>
+</html>

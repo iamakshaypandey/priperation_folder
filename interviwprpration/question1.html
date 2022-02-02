@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question-1</title>
+    <style>body{margin: auto;
+         font-size: large;
+         padding: 1rem;} div{font-size: 2rem;}</style>
+</head>
+<body>
+    <input type="number" class="input-one">
+    <input type="number" class="input-two">
+    <input type="button" value="+" id="pluse-btn">
+    <input type="button" value="-" id="minus-btn">
+    <input type="button" value="*" id="multiply">
+    <input type="button" value="/" id="divide"> 
+    <p>output will come hear</p>
+
+    <div id="output">
+    </div>
+</body>
+<script>
+    const inputOne=document.querySelector(".input-one")
+    const inputTow=document.querySelector(".input-two")
+    const pluseBtn=document.querySelector("#pluse-btn")
+    const minusBtn=document.querySelector("#minus-btn")
+    const multiplyBtn=document.querySelector("#multiply")
+    const divideBtn=document.querySelector("#divide")
+    const output=document.querySelector("#output")
+    function pluseOpration() {
+        const clculate=parseInt(inputOne.value)+parseInt(inputTow.value);
+        return output.innerText=clculate
+    }
+    pluseBtn.addEventListener('click',pluseOpration)
+
+    function minusOpration() {
+        const clculate=parseInt(inputOne.value)-parseInt(inputTow.value);
+        return output.innerText=clculate
+    }
+    minusBtn.addEventListener('click',minusOpration)
+
+    function multiplyOpration() {
+        const clculate=parseInt(inputOne.value)*parseInt(inputTow.value);
+        return output.innerText=clculate
+    }
+    multiplyBtn.addEventListener('click',multiplyOpration)
+
+    function divideOpration() {
+        const clculate=parseInt(inputOne.value)/parseInt(inputTow.value);
+        return output.innerText=clculate
+    }
+    divideBtn.addEventListener('click',divideOpration)
+
+</script>
+</html>

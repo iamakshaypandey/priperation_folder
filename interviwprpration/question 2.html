@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <input type="text"  id="text-input">
+    <input type="button" value="increase" id="increase-btn">
+    <input type="button" value="decrease" id="discrease-btn">
+    <input type="button" value="norml" id="normal-btn">
+
+</body>
+<script>
+    const input=document.querySelector("#text-input")
+    const increaseBtn=document.querySelector("#increase-btn")
+    const discreaseBtn=document.querySelector("#discrease-btn")
+    const normalBtn=document.querySelector("#normal-btn")
+    
+    function normalBtnOpration() {
+        input.style.fontSize=""
+    }
+    normalBtn.addEventListener("click",normalBtnOpration)
+    function increaseBtnOpration() {
+        input.style.fontSize="100px"
+    }
+    increaseBtn.addEventListener("click",increaseBtnOpration)
+
+    function discreaseBtnOpration() {
+        input.style.fontSize="30px"
+    }
+    discreaseBtn.addEventListener("click",discreaseBtnOpration)
+</script>
+</html>

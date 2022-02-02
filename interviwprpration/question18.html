@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <input type="text" id="input-id">
+    <button id="check-btn">check</button>
+    <!-- <div id="out-put"></div> -->
+</body>
+<script>
+    const input=document.querySelector("#input-id")
+    const checkBtn=document.querySelector("#check-btn")
+    const output=document.querySelector("#out-put")
+    function checkOpration(){
+        // console.log("connect");
+        const input1=input.value
+        if(input1.length>10){
+            checkBtn.disabled=true         
+        }else{
+            checkBtn.disabled=false
+            checkBtn.getComputedStyle(txt,null).get
+        }
+    }
+    checkBtn.addEventListener("click",checkOpration)
+</script>
+</html>

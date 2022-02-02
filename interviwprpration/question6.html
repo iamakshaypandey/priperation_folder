@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question6</title>
+</head>
+<body>
+    <h1 id="h1-Text">click button and hide text</h1>
+    <button id="button-id">Hide Btn</button>
+    <button id="Show-button-id"> show button</button>
+    
+</body>
+<script>
+    const h1Text=document.querySelector("#h1-Text")
+    const changeBtn=document.querySelector("#button-id")
+    const showBtn=document.querySelector("#Show-button-id")
+    
+    function ariaDisabledOpration(){
+        h1Text.style.display="none"
+    }
+    changeBtn.addEventListener("click",ariaDisabledOpration)
+
+    function showBtnOpration(){
+        h1Text.style.display="block"
+    }
+    showBtn.addEventListener("click",showBtnOpration)
+
+</script>
+</html>

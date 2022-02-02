@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question4</title>
+</head>
+<body>
+    <p id="paragraph-id">hello i am akshay pandey</p>
+    <input type="button" value="red" id="red-Btn">
+    <input type="button" id="green-Btn" value="green">
+    <input type="button" value="blue" id="blue-Btn">
+</body>
+<script>
+    const inputText=document.querySelector("#paragraph-id")
+    const redBtn= document.querySelector("#red-Btn")
+    const greenBtn =document.querySelector("#green-Btn")
+    const blueBtn = document.querySelector("#blue-Btn")
+    function redBtnOpration(){
+        inputText.style.color="red"
+    }
+    redBtn.addEventListener("click",redBtnOpration)
+
+    function greenBtnOpration(){
+        inputText.style.color="green"
+    }
+    greenBtn.addEventListener("click",greenBtnOpration)
+
+    function blueBtnOpration(){
+        inputText.style.color="blue"
+    }
+    blueBtn.addEventListener("click",blueBtnOpration)
+
+</script>
+</html>
